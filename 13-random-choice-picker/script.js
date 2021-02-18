@@ -32,6 +32,8 @@ function createTags(input) {
 function randomSelect() {
   // number of times to highlight each choice before stopping
   const times = 30;
+
+  // cycles through tags
   const interval = setInterval(() => {
     const randomTag = pickRandomTag();
 
@@ -42,6 +44,7 @@ function randomSelect() {
     }, 100);
   }, 100);
 
+  // lands on a tag
   setTimeout(() => {
     clearInterval(interval);
 
